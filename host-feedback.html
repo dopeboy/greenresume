@@ -132,7 +132,7 @@
                 // create sidebar and attach to menu open
                 $('.ui.sidebar').sidebar('attach events', '.toc.item');
 
-                $('.ui.dropdown').dropdown();
+                $('.ui.rating').rating();
             });
         </script>
     </head>
@@ -185,40 +185,18 @@
                 <div class="column">
                     <h2 class="ui centered header">
                         <div class="content">
-                            Events near you
+                            Rate their service
                         </div>
                     </h2>
                     <form class="ui large form">
-                        <a href="student-beach-opp.html">
-                            <div class="ui segment">
-                                <h3 class="ui header">Lake Merritt cleanup</h3>
-                                <img class="ui small left floated image" src="http://ww3.hdnux.com/photos/24/37/41/5371982/3/1024x1024.jpg">
-                                <p>Help Lake Merritt by picking up trash in and around the water.</p>
-                                <br/>
-                                <br/>
-                            </div>
-                        </a>
-                        <br/>
-                        <a href="sdfds.html">
-                            <div class="ui segment">
-                                <h3 class="ui header">Disabled children</h3>
-                                <img class="ui small left floated image" src="http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/06/Screen-Shot-2016-06-10-at-10.15.58-AM.png">
-                                <p>Help disabled children recover their basic motor functions at the California Institute of Children's Health (CICH).</p>
-                            </div>
-                        </a>
-                        <br/>
-                        <a href="sdfds.html">
-                            <div class="ui segment">
-                                <h3 class="ui header">Homeless shelter</h3>
-                                <img class="ui small left floated image" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Helping_the_homeless.jpg">
-                                <p>Help homeless shelthers and rehabilitations centers.</p>
-                                <br/>
-                                <br/>
-                                <br/>
-                            </div>
-                        </a>
-                        <br/>
-                        <br/>
+                        <div style="text-align: center">
+                            <div class="ui star centered massive rating"></div>
+                        </div>
+                        <br/><br/>
+                        <div class="field">
+                            <label>Comments</label>
+                            <textarea></textarea>
+                        </div>
                     </form>
                 </div>
             </div>

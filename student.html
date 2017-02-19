@@ -132,6 +132,7 @@
                 $('.ui.checkbox').checkbox('setting', 'onChange', function(t) {
                         $("#btn").attr("href", $(this).val());
                 });
+                $('.ui.dropdown').dropdown();
             });
         </script>
     </head>
@@ -184,57 +185,57 @@
                 <div class="column">
                     <h2 class="ui centered header">
                         <div class="content">
-                            Sign up
+                            Fill out profile
                         </div>
                     </h2>
                     <form class="ui large form">
-                            <div class="field">
-                                <div class="ui left icon input">
-                                    <i class="user icon"></i>
-                                    <input type="text" name="email" placeholder="First name">
-                                </div>
+                        <div class="ui selection dropdown" style="width: 100%;">
+                            <input type="hidden" name="gender">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">Choose a school</div>
+                            <div class="menu">
+                                <div class="item" data-value="1">Lionel Wilson</div>
+                                <div class="item" data-value="0">Madison Park</div>
+                                <div class="item" data-value="0">NOCCS</div>
                             </div>
-                            <div class="field">
-                                <div class="ui left icon input">
-                                    <i class="user icon"></i>
-                                    <input type="text" name="email" placeholder="Last name">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="ui left icon input">
-                                    <i class="mail icon"></i>
-                                    <input type="text" name="email" placeholder="Email address">
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="ui left icon input">
-                                    <i class="lock icon"></i>
-                                    <input type="password" name="password" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="grouped fields">
-                                <label>I am a...</label>
-                                <div class="field">
-                                    <div class="ui radio checkbox">
-                                        <input type="radio" name="example2" value="student.html">
-                                        <label>Student</label>
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <div class="ui radio checkbox">
-                                        <input type="radio" name="example2" value="host.html">
-                                        <label>Host</label>
-                                    </div>
-                                </div>
-                                <div class="field">
-                                    <div class="ui radio checkbox">
-                                        <input type="radio" name="example2" value="counselor.html">
-                                        <label>Guidance counselor</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <a id="btn" class="ui fluid large teal submit button">Signup</a>
                         </div>
+                        <br/>
+                        <br/>
+                        <div class="grouped fields">
+                            <label>Interests</label>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example2" value="student.html">
+                                    <label>Technology</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example2" value="student.html">
+                                    <label>Environmental</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example2" value="student.html">
+                                    <label>Arts</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example2" value="student.html">
+                                    <label>Sports</label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" name="example2" value="student.html">
+                                    <label>Tutoring</label>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <a id="btn" class="ui fluid large teal submit button">Continue</a>
                     </form>
                 </div>
             </div>

@@ -9,7 +9,6 @@
         <!-- Site Properties -->
         <title>Homepage - Semantic</title>
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
 
@@ -112,14 +111,11 @@
                 .ui.list .list>.item>.image:only-child, .ui.list .list>.item>img.image, .ui.list>.item>.image:only-child, .ui.list>.item>img.image {
                     border-radius: 0px;
                 }
-
-                #map {
-                    height: 200px;
-                }
         </style>
 
         <script>
             $(document).ready(function() {
+
                 // fix menu when passed
                 $('.masthead')
                     .visibility({
@@ -136,27 +132,9 @@
                 // create sidebar and attach to menu open
                 $('.ui.sidebar').sidebar('attach events', '.toc.item');
 
-                $('.ui.dropdown').dropdown();
+                $('.ui.rating').rating({    maxRating: 5
+                });
             });
-
-            function initMap() {
-                var myLatLng = {lat: 37.801239, lng: -122.258301};
-
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 12,
-                    center: myLatLng,
-                    disableDefaultUI: true
-                });
-
-                var marker = new google.maps.Marker({
-                    position: myLatLng,
-                    map: map,
-                    title: 'Hello World!'
-                });
-            }
-        </script>
-        <script async defer
-               src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5k1fNl99dlUgYvEIBM2pDHfZhjFBWrT0&callback=initMap">
         </script>
     </head>
     <body>
@@ -207,60 +185,30 @@
                 <div class="column">
                     <h2 class="ui centered header">
                         <div class="content">
-                            Confirmation
+                            Upload
                         </div>
                     </h2>
                     <form class="ui large form">
-                        <div class="ui segment">
-                            <div id="map"></div>
-                            <div class="ui list">
-                                <div class="item">
-                                    <i class="calendar icon"></i>
-                                    <div class="content">
-                                        Sunday, February 19th
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <i class="marker icon"></i>
-                                    <div class="content">
-                                        Oakland, CA
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <i class="hourglass full icon"></i>
-                                    <div class="content">
-                                        1 hour
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <i class="fa fa-clock-o" aria-hidden='true'></i>
-                                    <div class="content" style="display: inline; margin-left: 10px;">
-                                        4:00 PM
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <i class="fa fa-trophy" aria-hidden='true'></i>
-                                    <div class="content" style="display: inline; margin-left: 10px;">
-                                        <a class="ui green label">
-                                            <i class="fa-trash icon"></i>
-                                            Trash
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                        <br/>
+                        <div style="text-align: center">
+                            <button class="ui pink labeled icon button">
+                                  <i class="cloud upload icon"></i>
+                                    Upload photos
+                            </button>
                         </div>
-                        <p>Congrats! You've book your first event. You are now officially ready to start community service.</p>
-                        <p>Please remember to bring:</p>
-                        <div class="ui bulleted list">
-                            <div class="item">Gloves</div>
-                            <div class="item">Bag</div>
-                            <div class="item">Shoes that you can get dirty</div>
-                            <div class="item">Comfortable clothes</div>
-                        </div>
+                        <h3 class="ui header">Existing photos</h3>
+                        <img src="http://gardensatlakemerritt.org/wp-content/uploads/2010/08/1.jpg" style="width: 75px; height:50px">
+                        <img src="https://ww2.kqed.org/news/wp-content/uploads/sites/10/2016/03/Screen-Shot-2016-03-17-at-4.04.15-PM-800x450.png" style="width: 75px; height: 50px">
+                        <img src="http://fssba.org/wp-content/uploads/2014/05/group.jpg" style="width: 75px; height: 50px">
+                        <br/>
+                        <br/>
+                        <a id="btn" href="host-feedback.html" class="ui fluid large teal submit button">Next</a>
                         <br/>
                         <br/>
                     </form>
                 </div>
             </div>
-        </body>
+        </div>
+    </body>
+
 </html>

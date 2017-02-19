@@ -108,6 +108,9 @@
                         padding-right: 20px;
                     }
                 }
+                .ui.list .list>.item>.image:only-child, .ui.list .list>.item>img.image, .ui.list>.item>.image:only-child, .ui.list>.item>img.image {
+                    border-radius: 0px;
+                }
         </style>
 
         <script>
@@ -182,54 +185,27 @@
                 <div class="column">
                     <h2 class="ui centered header">
                         <div class="content">
-                            Fill out profile
+                            Events
                         </div>
                     </h2>
                     <form class="ui large form">
-                        <div class="ui selection dropdown" style="width: 100%;">
-                            <input type="hidden" name="gender">
-                            <i class="dropdown icon"></i>
-                            <div class="default text">Choose a school</div>
-                            <div class="menu">
-                                <div class="item" data-value="1">Lionel Wilson</div>
-                                <div class="item" data-value="0">Madison Park</div>
-                                <div class="item" data-value="0">NOCCS</div>
-                            </div>
+                        <div class="ui segment">
+                            <h3 class="ui header">Beach cleanup</h3>
+                            <img class="ui small left floated image" src="https://www.greenprophet.com/wp-content/uploads/2012/04/Zalul-beach-clean-up-efforts.jpg">
+                            <p>End the heavy pollution of San Locco Beach with volunteer work removing trash.</p>
+                            <br/>
                         </div>
-                        <br/>
-                        <br/>
-                        <div class="grouped fields">
-                            <label>Interests</label>
-                            <div class="field">
-                                <div class="ui checkbox">
-                                    <input type="checkbox" name="example2" value="student.html">
-                                    <label>Technology</label>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="ui checkbox">
-                                    <input type="checkbox" name="example2" value="student.html">
-                                    <label>Environmental</label>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="ui checkbox">
-                                    <input type="checkbox" name="example2" value="student.html">
-                                    <label>Arts</label>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="ui checkbox">
-                                    <input type="checkbox" name="example2" value="student.html">
-                                    <label>Sports</label>
-                                </div>
-                            </div>
-                            <div class="field">
-                                <div class="ui checkbox">
-                                    <input type="checkbox" name="example2" value="student.html">
-                                    <label>Tutoring</label>
-                                </div>
-                            </div>
+
+                        <div class="ui segment">
+                            <h3 class="ui header">Disabled children</h3>
+                            <img class="ui small left floated image" src="http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/06/Screen-Shot-2016-06-10-at-10.15.58-AM.png">
+                            <p>Help disabled children recover their basic motor functions at the California Institute of Children's Health (CICH).</p>
+                        </div>
+
+                        <div class="ui segment">
+                            <h3 class="ui header">Homeless shelter</h3>
+                            <img class="ui small left floated image" src="https://upload.wikimedia.org/wikipedia/commons/8/89/Helping_the_homeless.jpg">
+                            <p>Help homeless shelthers and rehabilitations centers.</p>
                         </div>
                         <br/>
                         <a id="btn" href="student-view-opp.html" class="ui fluid large teal submit button">Continue</a>

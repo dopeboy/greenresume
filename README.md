@@ -41,5 +41,5 @@ https://rawgit.com/dopeboy/greenresume/master/index.html (best viewed on a phone
 
 ## Presentation deck
 
-[Presentation](zzzzzz)
+[Presentation](https://drive.google.com/file/d/0B3zWwyVqkik2V3ZqVHZONEpub1U/view?usp=drive_web)
 
